@@ -1,0 +1,339 @@
+* {
+  list-style: none;
+  text-decoration: none !important;
+}
+
+.sidebar {
+  position: fixed;
+  width: 260px;
+  height: 100%;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.shadow {
+  box-shadow: 0 10px 5px -5px rgba(0, 0, 0, 0.5);
+}
+
+body {
+  display: flex;
+}
+
+.btn-custom {
+  color: #000 !important;
+  font-weight: 500 !important;
+  background-color: #F4C542;
+  background-image: conic-gradient(from 1turn, #F4C542, #ebb522);
+}
+
+.color-text {
+  color: #98A7B5 !important;
+}
+
+.content-wrapper {
+  transition: margin-left 0.5s;
+  display: block;
+  position: relative;
+  width: 100%;
+  background-color: #24262B;
+  margin: calc(2vw + 80px) 2vw 0 calc(2vw + 200px);
+  padding: 2vw 6vw;
+  border-radius: 20px 20px 0 0;
+}
+
+.sidebar {
+  background-color: #1c1e22;
+}
+
+.sidebar-menu {
+  margin: calc(2.5vh + 80px) .75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+}
+
+.sidebar-menu p {
+  font-weight: 700;
+  margin: 0 !important;
+  color: #ffff;
+}
+
+
+
+.sidebar-menu li {
+  padding: 0 2rem;
+  background-color: #24262B;
+  border-radius: .25rem
+}
+
+.sidebar-menu li:hover {
+  background-color: #4D565E;
+  color: #fff;
+}
+
+.sidebar-menu li a {
+  display: flex;
+
+  gap: 2rem;
+  padding: 10px 0;
+  width: 100%;
+
+  height: 46px;
+
+}
+
+.sidebar-menu li a span {
+  color: #98A7B5;
+}
+
+i {
+  color: #ffff;
+}
+
+.sidebar-menu li a span:hover {
+  color: #ffffff;
+}
+
+
+.navbar {
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 100;
+}
+
+.navbar-brand {
+  z-index: 999;
+}
+
+.change {
+  border: solid 0;
+  background-color: #292d2e;
+  padding: .25rem;
+  color: #fff;
+  width: 25%;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.wrap h1,
+.wrap h2 {
+  font-weight: 900;
+}
+
+.cont {
+  background-color: #1C1E22;
+  border-radius: .25rem;
+  padding: 2.5vh 2.5vw;
+  width: 100%;
+  height: 100%;
+}
+
+.form {
+  margin: 4vh 6vw;
+  display: flex;
+  row-gap: 2.5vh;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.form-group{
+  width: 49.5%;
+}
+
+.form-group input {
+  border-radius: 10px;
+  padding: 10px 20px;
+  width: 100%;
+  background-color: #292d2e;
+  border: #292d2e solid;
+  color: #fff;
+}
+
+.textarea {
+  width: 100%;
+  height: 100%;
+}
+
+.textarea textarea {
+  border-radius: 10px;
+  padding: 10px 20px;
+  width: 100%;
+  height: 100%;
+  background-color: #fafafa;
+  border: #c7c7c7 solid;
+}
+
+.title-group {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.raffle {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  margin: 20px 0;
+  background-color: #1C1E22;
+  color: #ffff;
+}
+
+.raffle thead,
+tbody,
+th,
+tfoot,
+td,
+tr {
+  padding: 10px 20px;
+}
+
+.raffle thead {
+  border-bottom: solid #e4e4e4 1px;
+  color: #ffffff79;
+}
+
+.image-input {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.home {
+  position: relative;
+  z-index: 1;
+  height: calc(100vh - (2vw + 80px));
+}
+
+.page-link {
+  width: 50px !important;
+}
+
+.bi-caret-right-fill {
+  display: none;
+  position: absolute;
+  top: -10px;
+  left: 54px;
+  background-color: #1C1E22;
+  cursor: pointer;
+}
+
+.hidden-nav {
+  display: none;
+
+}
+
+.hidden-wrapper {
+  margin-left: 2vw;
+}
+
+.raffle tbody tr th.modify {
+  display: flex;
+  gap: 10px;
+}
+
+thead tr {
+  display: none;
+}
+
+thead tr:first-child {
+  display: table-row;
+}
+
+.bg-first {
+  background-color: #24262B;
+}
+
+.bg-second {
+  background-color: #1c1e22;
+}
+
+.back {
+  left: -10px;
+}
+
+
+
+@media only screen and (max-width: 1080px) {
+  .bi-caret-right-fill {
+    display: block;
+  }
+
+  body {
+    height: 100% !important;
+  }
+
+  p {
+    font-size: 14px !important;
+  }
+
+  thead tr {
+    display: flex;
+  }
+
+  .page-item {
+    display: flex;
+    align-items: center;
+  }
+
+  #items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .home {
+    height: 100%;
+  }
+
+  .raffle {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .raffle thead,
+  tbody {
+    padding: 0;
+  }
+
+  .raffle thead tr,
+  tbody tr {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-around;
+  }
+
+
+  .form-group {
+    width: 100%;
+  }
+
+  .form-group input {
+    width: 100%;
+  }
+
+  .title-group {
+    flex-direction: column;
+  }
+
+  .row {
+    width: 100%;
+  }
+
+  .form {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .form {
+    column-gap: 0;
+  }
+}
